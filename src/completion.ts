@@ -2368,4 +2368,30 @@ export const BuiltinComplationItems: CompletionItem[] = [
         label: "ARGS",
         kind: Variable,
     },
+    //Start EmueraM hack
+    {
+        label: "PLAYXM",
+        kind: Command,
+        detail: "[EmueraM only] Play a module music that presented in the Resources folder.",
+    },
+    {
+        label: "STOPXM",
+        kind: Command,
+        detail: "[EmueraM only] Stop currently playing music.",
+    },
+    {
+        label: "EMUMESSAGEINFO",
+        kind: Command,
+        detail: "Send a message that have a lowest priority",
+    },
+    {
+        label: "EMUMESSAGEPOTENTIAL",
+        kind: Command,
+        detail: "Send a message that have a medium priority",
+    },
+    {
+        label: "EMUMESSAGEWARNING",
+        kind: Command,
+        detail: "Send a message that have a highest priority",
+        },
 ];

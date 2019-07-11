@@ -11,7 +11,7 @@ import { DefinitionRepository } from "./definition";
 import { readSymbolInformations, SymbolInformationRepository } from "./symbol";
 
 export function activate(context: ExtensionContext) {
-    const selector: DocumentSelector = { language: "erabasic" };
+    const selector: DocumentSelector = { language: "erabasicm" };
     const provider: DeclarationProvider = new DeclarationProvider();
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider(selector, new EraBasicCompletionItemProvider()));
     context.subscriptions.push(vscode.languages.registerDefinitionProvider(selector, new EraBasicDefinitionProvider(provider)));

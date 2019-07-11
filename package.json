@@ -1,16 +1,16 @@
 {
-    "name": "erabasic",
-    "displayName": "EraBasic",
-    "description": "Language Support for EraBasic",
+    "name": "erabasicm",
+    "displayName": "EraBasic for EmueraM",
+    "description": "Language support for a special version of EraBasic(EraBasic for EmueraM). Based on sasami's plugin.",
     "license": "CC0-1.0",
-    "version": "0.2.0",
-    "publisher": "sasami",
+    "version": "0.1.0",
+    "publisher": "LovelyA72",
     "bugs": {
-        "url": "https://github.com/sasami/vscode-erabasic/issues"
+        "url": "https://github.com/LovelyA72/vscode-erabasic/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/sasami/vscode-erabasic.git"
+        "url": "https://github.com/LovelyA72/vscode-erabasic.git"
     },
     "engines": {
         "vscode": "^1.17.0"
@@ -19,11 +19,11 @@
         "Languages"
     ],
     "activationEvents": [
-        "onLanguage:erabasic"
+        "onLanguage:erabasicm"
     ],
     "main": "./out/extension",
     "scripts": {
-        "build": "vsce package --baseContentUrl . --baseImagesUrl https://rawgit.com/sasami/vscode-erabasic/master/ --out erabasic-latest.vsix",
+        "build": "vsce package --baseContentUrl . --baseImagesUrl https://rawgit.com/LovelyA72/vscode-erabasic/master/ --out erabasicm-latest.vsix",
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
@@ -32,10 +32,10 @@
     "contributes": {
         "languages": [
             {
-                "id": "erabasic",
+                "id": "erabasicm",
                 "aliases": [
-                    "EraBasic",
-                    "erabasic"
+                    "EraBasic(EmueraM)",
+                    "erabasicm"
                 ],
                 "extensions": [
                     ".erb",
@@ -46,14 +46,14 @@
         ],
         "grammars": [
             {
-                "language": "erabasic",
+                "language": "erabasicm",
                 "scopeName": "source.erabasic",
                 "path": "./syntaxes/erabasic.tmLanguage.json"
             }
         ],
         "snippets": [
             {
-                "language": "erabasic",
+                "language": "erabasicm",
                 "path": "./snippets/erabasic.json"
             }
         ]
