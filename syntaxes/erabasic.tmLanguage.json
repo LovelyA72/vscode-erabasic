@@ -714,6 +714,19 @@
 						}
 					},
 					"end": "$"
+				},{
+					"begin": "\\b(PLAYXM|STOPXM|EMUMESSAGEINFO|EMUMESSAGEPOTENTIAL|EMUMESSAGEWARNING)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.other.command.erabasicm"
+						}
+					},
+					"end": "$",
+					"patterns": [
+						{
+							"include": "#form-string"
+						}
+					]
 				}
 			]
 		}
